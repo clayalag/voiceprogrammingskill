@@ -21,6 +21,9 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
 
+    <!-- Importing One Dark Pro Theme for Codemirror -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror-one-dark-theme@1.1.1/one-dark.min.css">
+
     <!-- Importing Codemirror Python Module -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/python/python.js" integrity="sha512-G0EFbDITXmhZT1xfeH55X0GkKCVwiuYnspBl+YfN5AzEbHFqyhVxN6Y8W5hpMsGMrWrMvB8hOCh16mPrzcP9bA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -81,11 +84,12 @@
     <!-- Codemirror settings -->
     <script>
         var cm = new CodeMirror.fromTextArea(document.getElementById("editor"), {
+            value: "print('Hello World')",
             lineNumbers: true,
             tabSize: 4,
             mode: "python",
-            value: 'console.log("Hello, World");',
-            theme: "monokai"
+            theme: "one-dark",
+            smartIndent: true,
         });
     </script>
 

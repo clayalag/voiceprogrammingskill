@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
+
+/* Styles */
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
+    background-color: #f2f2f2;
 }
 .hero{
     display:flex;
@@ -10,17 +14,25 @@ body{
     align-items:center;
     width:100%;
     margin:auto;
-    margin-bottom:5rem;
-    background-color: #f2f2f2;
 }
 .flex-container{
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    margin-bottom:5rem;
-    min-height:85vh;
+    min-height:100vh;
 }
+.editor-container{
+  width: 50%;
+  margin: auto;
+}
+.editor-title{
+  text-align: center;
+}
+
+
+/* Animations */
+
 /* Typing animation */
 .typing-demo {
     width: 22ch;
@@ -42,3 +54,13 @@ body{
       border-color: transparent
     }
   }
+
+
+/* Media Querys */
+
+@media screen and (max-width: 800px) {
+  .editor-container{
+    width: 100%;
+  }
+  
+}

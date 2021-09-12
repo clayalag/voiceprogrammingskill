@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:auto;
+    margin-bottom:5rem;
+    background-color: #f2f2f2;
+}
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5rem;
+    min-height:85vh;
+}
+/* Typing animation */
+.typing-demo {
+    width: 22ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-family: monospace;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
